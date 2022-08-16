@@ -28,8 +28,8 @@ export function Header() {
                         <a className={currentRouter === '/' ? style.active : ''}>Home</a>
                     </Link>
 
-                    <Link href='/conteudos'>
-                        <a className={currentRouter === '/conteudos' ? style.active : ''}>Conteúdos</a>
+                    <Link href='/posts'>
+                        <a className={currentRouter === '/posts' ? style.active : ''}>Conteúdos</a>
                     </Link>
 
                     <Link href='/sobre'>
