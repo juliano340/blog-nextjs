@@ -1,8 +1,13 @@
+import { FiChevronLeft, FiChevronsLeft, FiChevronRight, FiChevronsRight } from "../../../node_modules/react-icons/fi/index";
+
 import styles from './styles.module.scss';
 import Head from '../../../node_modules/next/head';
 import Link from '../../../node_modules/next/link';
 import Image from '../../../node_modules/next/image';
 import thumbImg from '../../../public/images/thumb.png';
+
+
+
 
 
 export default function Posts() {
@@ -30,6 +35,32 @@ export default function Posts() {
                         </a>
                     </Link>
 
+                    <div className={styles.buttonsNavigate}>
+
+                        <div>
+                            <button>
+                                <FiChevronsLeft size={25} color="#fff"/>
+                            </button>
+
+                            <button>
+                                <FiChevronLeft size={25} color="#fff"/>
+                            </button>
+                        </div>
+
+                         <div>
+                            <button>
+                                <FiChevronsRight size={25} color="#fff"/>
+                            </button>
+
+                            <button>
+                                <FiChevronRight size={25} color="#fff"/>
+                            </button>
+                        </div>
+                       
+
+                    </div>
+
+                   
                 </div>
             </main>
         </>
