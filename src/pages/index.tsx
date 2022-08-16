@@ -1,5 +1,7 @@
 import Head from '../../node_modules/next/head';
 import style from '../styles/Home.module.scss';
+import Image from '../../node_modules/next/image';
+import TechsImage from '../../public/images/techs.svg'
 
 export default function Home() {
   return (
@@ -51,7 +53,21 @@ export default function Home() {
             <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, fugiat?</span>
           </section>
 
-</div>
+        </div>
+
+        <div className={style.nextLevelContent}>
+
+          <Image src={TechsImage} alt="Tecnologias"></Image>
+          <h2>Lorem ipsum <span className={style.alunos}> dolor sit amet </span> consectetur adipisicing elit. Ex, dignissimos!
+          </h2>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+          <span>
+            <a>
+              <button>COMEÇAR AGORA!</button>
+            </a>
+          </span>
+
+        </div>
 
 
       </main>
